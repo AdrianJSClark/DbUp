@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using DbUp.Engine.Output;
 using DbUp.Engine.Transactions;
-using DbUp.Helpers;
 using DbUp.Tests.TestInfrastructure;
 using NSubstitute;
 using Shouldly;
@@ -18,8 +16,19 @@ namespace DbUp.Tests.Engine
         [Fact]
         public void OnlyOneTransactionIsOpenedAtATimeWithTransactionPerScriptStrategy()
         {
+
+/* Unmerged change from project 'dbup-tests (netcoreapp2.0)'
+Before:
             var connectionFactory = new TransactionCountingConnectionFactory();
             
+            var upgradeEngine = DeployChanges.To
+After:
+            var connectionFactory = new TransactionCountingConnectionFactory();
+
+            var upgradeEngine = DeployChanges.To
+*/
+            var connectionFactory = new TransactionCountingConnectionFactory();
+
             var upgradeEngine = DeployChanges.To
                 .SqlDatabase("")
                 .OverrideConnectionFactory(connectionFactory)
@@ -32,12 +41,11 @@ namespace DbUp.Tests.Engine
             result.Error.ShouldBeNull();
             result.Successful.ShouldBeTrue();
 
-            
+
             connectionFactory.TransactionWasOpened.ShouldBeTrue("BeginTransaction was never called");
         }
-        
-        
-        class TransactionCountingConnectionFactory  : IConnectionFactory
+
+        private class TransactionCountingConnectionFactory : IConnectionFactory
         {
             private int transactionCount = 0;
 
@@ -49,7 +57,7 @@ namespace DbUp.Tests.Engine
                 conn.BeginTransaction().ReturnsForAnyArgs(c =>
                 {
                     TransactionWasOpened = true;
-                    
+
                     if (transactionCount > 0)
                         throw new Exception("Test failed as multiple transaction were opened");
 

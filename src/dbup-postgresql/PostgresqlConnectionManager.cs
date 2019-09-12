@@ -1,9 +1,37 @@
-﻿using DbUp.Engine.Transactions;
+﻿
+/* Unmerged change from project 'dbup-postgresql (net45)'
+Before:
+using DbUp.Engine.Transactions;
 using Npgsql;
 using System;
+After:
+using System;
+*/
+
+/* Unmerged change from project 'dbup-postgresql (netstandard2.0)'
+Before:
+using DbUp.Engine.Transactions;
+using Npgsql;
+using System;
+After:
+using System;
+*/
+
+/* Unmerged change from project 'dbup-postgresql (net35)'
+Before:
+using DbUp.Engine.Transactions;
+using Npgsql;
+using System;
+After:
+using System;
+*/
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
+using DbUp.Engine.Transactions;
+using Npgsql;
+using DbUp.Engine.Transactions;
+using Npgsql;
 
 namespace DbUp.Postgresql
 {

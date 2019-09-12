@@ -1,8 +1,16 @@
 ﻿using System;
-using NUnit.Framework;
+using System.Linq;
 using System.Text;
+
+/* Unmerged change from project 'dbup-tests (netcoreapp2.0)'
+Before:
 using System.Linq;
 using DbUp.Support;
+After:
+using DbUp.Support;
+using NUnit.Support;
+*/
+using DbUp.Framework;
 using Shouldly;
 using Xunit;
 

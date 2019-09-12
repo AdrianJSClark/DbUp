@@ -1,5 +1,25 @@
-﻿using DbUp.Engine;
+﻿using System;
+/* Unmerged change from project 'dbup-postgresql (net45)'
+Before:
 using System;
+After:
+using DbUp.Engine;
+*/
+
+/* Unmerged change from project 'dbup-postgresql (netstandard2.0)'
+Before:
+using System;
+After:
+using DbUp.Engine;
+*/
+
+/* Unmerged change from project 'dbup-postgresql (net35)'
+Before:
+using System;
+After:
+using DbUp.Engine;
+*/
+
 
 namespace DbUp.Postgresql
 {

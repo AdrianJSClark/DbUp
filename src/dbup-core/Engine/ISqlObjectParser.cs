@@ -1,8 +1,52 @@
-﻿using DbUp.Support;
+﻿
+/* Unmerged change from project 'dbup-core (net45)'
+Before:
+using DbUp.Support;
 using System;
-using System.Collections.Generic;
-using System.Linq;
+After:
+using System;
+*/
+
+/* Unmerged change from project 'dbup-core (net35)'
+Before:
+using DbUp.Support;
+using System;
+After:
+using System;
+*/
+
+/* Unmerged change from project 'dbup-core (netstandard2.0)'
+Before:
+using DbUp.Support;
+using System;
+After:
+using System;
+*/
+using DbUp.Support;
+/* Unmerged change from project 'dbup-core (net45)'
+Before:
 using System.Text;
+After:
+using System.Text;
+using DbUp.Support;
+*/
+
+/* Unmerged change from project 'dbup-core (net35)'
+Before:
+using System.Text;
+After:
+using System.Text;
+using DbUp.Support;
+*/
+
+/* Unmerged change from project 'dbup-core (netstandard2.0)'
+Before:
+using System.Text;
+After:
+using System.Text;
+using DbUp.Support;
+*/
+
 
 namespace DbUp.Engine
 {

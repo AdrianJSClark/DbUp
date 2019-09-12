@@ -1,5 +1,11 @@
-﻿using DbUp.Engine;
+﻿using System;
+/* Unmerged change from project 'dbup-firebird (net45)'
+Before:
 using System;
+After:
+using DbUp.Engine;
+*/
+
 
 namespace DbUp.Firebird
 {
