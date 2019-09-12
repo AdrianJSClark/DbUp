@@ -6,21 +6,8 @@ using DbUp.Engine;
 using DbUp.Engine.Output;
 using DbUp.Engine.Transactions;
 using DbUp.SqlServer;
-using DbUp.SqlServer;
 using DbUp.Tests.TestInfrastructure;
 using NSubstitute;
-
-/* Unmerged change from project 'dbup-tests (netcoreapp2.0)'
-Before:
-using DbUp.SqlServer;
-using NSubstitute.ExceptionExtensions;
-using Xunit;
-using Shouldly;
-After:
-using NSubstitute.ExceptionExtensions;
-using Shouldly;
-using Xunit;
-*/
 using Shouldly;
 using Xunit;
 

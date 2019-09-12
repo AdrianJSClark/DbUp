@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using DbUp.Support;
-using DbUp.Support;
 
 namespace DbUp.SqlServer
 {

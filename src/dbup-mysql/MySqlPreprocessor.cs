@@ -1,25 +1,4 @@
-﻿using System;
-/* Unmerged change from project 'dbup-mysql (net45)'
-Before:
-using System;
-After:
-using DbUp.Engine;
-*/
-
-/* Unmerged change from project 'dbup-mysql (net35)'
-Before:
-using System;
-After:
-using DbUp.Engine;
-*/
-
-/* Unmerged change from project 'dbup-mysql (netstandard2.0)'
-Before:
-using System;
-After:
-using DbUp.Engine;
-*/
-
+﻿using DbUp.Engine;
 
 namespace DbUp.MySql
 {
